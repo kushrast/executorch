@@ -52,7 +52,7 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release)
+  set(CMAKE_BUILD_TYPE Debug)
 endif()
 
 # _default_release_disabled_options: default value for options that should be
@@ -61,7 +61,7 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
   set(_default_release_disabled_options OFF)
 else()
-  set(_default_release_disabled_options OFF)
+  set(_default_release_disabled_options ON)
 endif()
 
 option(EXECUTORCH_ENABLE_LOGGING "Build with ET_LOG_ENABLED"
