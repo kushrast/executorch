@@ -61,7 +61,7 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
   set(_default_release_disabled_options OFF)
 else()
-  set(_default_release_disabled_options ON)
+  set(_default_release_disabled_options OFF)
 endif()
 
 option(EXECUTORCH_ENABLE_LOGGING "Build with ET_LOG_ENABLED"
